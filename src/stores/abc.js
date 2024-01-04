@@ -1,6 +1,4 @@
 import { defineStore } from "pinia";
-import VueResource from 'vue-resource';
-// Vue.use(VueResource)
 export default defineStore("data", {
     //需要輸入兩個參數，1自建資料庫名稱，2資料庫內容
 
@@ -193,8 +191,7 @@ export default defineStore("data", {
             })
         },
         getWenhua() {
-            // Vue.use(VueResource);
-            this.$http.get('static/bunnka.json')
+            fetch("../static/bunnka.json")
                 .then(response => response.json())
                 .then(data => {
                     this.objb = data
@@ -202,7 +199,7 @@ export default defineStore("data", {
                 })
         },
         getSport() {
-            this.$http.get('static/api.JSON')
+            fetch("../static/api.JSON")
                 .then(response => response.json())
                 .then(data => {
                     this.objs = data

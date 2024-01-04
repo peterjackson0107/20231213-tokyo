@@ -15,7 +15,6 @@ data() {
         sjd:0, //final長度的亂數
         vf:0, //v-if用法
         bgColor: this.getRandomTransparentColor(),
-        imagePath: "../src/components/pictrue/03.png",
     }
 },
 computed: {
@@ -119,7 +118,7 @@ methods:{
 <template>
   
   <div>
-    <img :src="imagePath" alt="Mouse Image" class="mouse-image" ref="mouseImage">
+    <img src="../components/data/2.png" alt="Mouse Image" class="mouse-image" ref="mouseImage">
   </div>
     <div style="height: 100%;" :style="{ backgroundColor: bgColor }">
     <button @click="changeColor">Change Color</button>

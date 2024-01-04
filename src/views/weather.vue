@@ -13,7 +13,6 @@ export default{
             //如果要加多筆資料，記得多加新的空陣列讓資料可以放進來。
             c:"",
             imgC:"",
-            imagePath: "../src/components/pictrue/2.png",
         }
     },
     computed:{
@@ -192,7 +191,7 @@ export default{
             <p class="wind" id="wind">風速</p>
             <p class="wet" id="wet">濕度</p>
             <div>
-                <img :src="imagePath" alt="Mouse Image" class="mouse-image" ref="mouseImage"/>
+                <img src="../components/data/2.png" alt="Mouse Image" class="mouse-image" ref="mouseImage"/>
             </div>
         </div>
         </div>

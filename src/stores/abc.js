@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import {jsonData} from "../components/bunnka.json";
 export default defineStore("data", {
     //需要輸入兩個參數，1自建資料庫名稱，2資料庫內容
 
@@ -191,7 +192,7 @@ export default defineStore("data", {
             })
         },
         getWenhua() {
-            fetch("../public/bunnka.json")
+            fetch('../componments/data/bunnka')
                 .then(response => response.json())
                 .then(data => {
                     this.objb = data
@@ -199,7 +200,7 @@ export default defineStore("data", {
                 })
         },
         getSport() {
-            fetch("../public/api.JSON")
+            fetch('../componments/data/api')
                 .then(response => response.json())
                 .then(data => {
                     this.objs = data

@@ -21,7 +21,6 @@ export default{
             choiceNp:"",
             choiceNs:"",
             any:0,
-            imagePath: "../src/components/pictrue/2.png",
         }
     },
     computed:{
@@ -275,7 +274,7 @@ export default{
                 </div>
             </div>
             <div>
-                <img :src="imagePath" alt="Mouse Image" class="mouse-image" ref="mouseImage"/>
+                <img src="../components/data/2.png" alt="Mouse Image" class="mouse-image" ref="mouseImage"/>
             </div>
             <div class="displaybox">
             <p class="title">東京天氣地圖</p> 

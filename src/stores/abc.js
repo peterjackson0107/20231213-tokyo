@@ -1,6 +1,4 @@
 import { defineStore } from "pinia";
-import jsonData from 'bunnka.json';
-import jsonData1 from 'api.JSON';
 export default defineStore("data", {
     //需要輸入兩個參數，1自建資料庫名稱，2資料庫內容
 
@@ -193,10 +191,19 @@ export default defineStore("data", {
             })
         },
         getWenhua() {
-            this.objb = jsonData;
+            fetch('/bunnka.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.objb = data
+                    // console.log(data)
+                })
         },
         getSport() {
-            this.objb = jsonData1;
+            fetch('/api.JSON')
+                .then(response => response.json())
+                .then(data => {
+                    this.objs = data
+                })
         },
         ck() {
             const idarr = document.querySelectorAll("path[name='area']")

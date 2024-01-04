@@ -1,5 +1,4 @@
 import { defineStore } from "pinia";
-import {jsonData} from "../components/bunnka.json";
 export default defineStore("data", {
     //需要輸入兩個參數，1自建資料庫名稱，2資料庫內容
 

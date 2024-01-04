@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap"
 
 import VueResource from 'vue-resource'
-Vue.use(VueResource)
+// Vue.use(VueResource)
 
 import * as echarts from 'echarts';
 

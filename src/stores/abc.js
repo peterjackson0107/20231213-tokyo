@@ -1,4 +1,6 @@
 import { defineStore } from "pinia";
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 export default defineStore("data", {
     //需要輸入兩個參數，1自建資料庫名稱，2資料庫內容
 

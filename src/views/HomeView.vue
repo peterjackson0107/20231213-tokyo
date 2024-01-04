@@ -21,7 +21,7 @@ export default{
             choiceNp:"",
             choiceNs:"",
             any:0,
-            imagePath: require("../src/components/pictrue/2.png"),
+            imagePath: "../src/components/pictrue/2.png",
         }
     },
     computed:{

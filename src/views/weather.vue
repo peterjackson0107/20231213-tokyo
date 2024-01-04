@@ -13,7 +13,7 @@ export default{
             //如果要加多筆資料，記得多加新的空陣列讓資料可以放進來。
             c:"",
             imgC:"",
-            imagePath: require("../src/components/pictrue/2.png"),
+            imagePath: "../src/components/pictrue/2.png",
         }
     },
     computed:{

@@ -15,7 +15,7 @@ data() {
         sjd:0, //final長度的亂數
         vf:0, //v-if用法
         bgColor: this.getRandomTransparentColor(),
-        imagePath: require('@/src/components/pictrue/03.png'),
+        imagePath: "../src/components/pictrue/03.png",
     }
 },
 computed: {

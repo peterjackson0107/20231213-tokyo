@@ -191,7 +191,7 @@ export default defineStore("data", {
             })
         },
         getWenhua() {
-            fetch('@/public/bunnka.json')
+            fetch("../public/bunnka.json")
                 .then(response => response.json())
                 .then(data => {
                     this.objb = data
@@ -199,7 +199,7 @@ export default defineStore("data", {
                 })
         },
         getSport() {
-            fetch('@/public/api.JSON')
+            fetch("../public/api.JSON")
                 .then(response => response.json())
                 .then(data => {
                     this.objs = data
